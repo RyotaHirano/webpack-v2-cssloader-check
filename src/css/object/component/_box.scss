@@ -1,0 +1,9 @@
+.c-box {
+  background: #333;
+  box-sizing: border-box;
+  padding: 20px;
+
+  &--image {
+    background-image: url('./assets/');
+  }
+}

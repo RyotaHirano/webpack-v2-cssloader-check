@@ -29,8 +29,6 @@ module.exports = {
     }),
     new ExtractTextPlugin({
       filename: 'assets/css/style.[hash].css',
-      disable: process.env.NODE_ENV !== 'production',
-      allChunks: true
     })
   ],
   module: {
@@ -45,7 +43,6 @@ module.exports = {
         use: ExtractTextPlugin.extract({
           fallback: "style-loader",
           use: [
-            { loader: 'css-loader', options: { importLoaders: 2 } },
             'postcss-loader',
             'sass-loader',
           ]
