@@ -1,0 +1,37 @@
+{
+  "name": "webpack v2 css-loader check",
+  "scripts": {
+    "start": "webpack-dev-server --progress --hot --open",
+    "clean": "rm -rf ./public",
+    "build": "yarn run clean && NODE_ENV=production webpack --progress --hide-modules",
+    "test": "./node_modules/.bin/jest"
+  },
+  "engines": {
+    "node": ">=6.11.2"
+  },
+  "private": true,
+  "devDependencies": {
+    "autoprefixer": "^6.7.0",
+    "babel-core": "^6.18.2",
+    "babel-loader": "^7.1.0",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-runtime": "^6.18.0",
+    "css-loader": "^0.28.4",
+    "css-mqpacker": "^5.0.1",
+    "extract-text-webpack-plugin": "^2.1.2",
+    "html-webpack-plugin": "^2.28.0",
+    "node-sass": "^4.5.3",
+    "postcss-flexbugs-fixes": "^2.1.0",
+    "postcss-loader": "^2.0.6",
+    "pug": "^2.0.0-beta6",
+    "pug-html-loader": "^1.1.0",
+    "pug-loader": "^2.3.0",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
+    "webpack": "^2.7.0",
+    "webpack-dev-server": "^2.7.0"
+  },
+  "dependencies": {
+    "sanitize.css": "^5.0.0"
+  }
+}
